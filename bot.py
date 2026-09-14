@@ -25,7 +25,7 @@ queue_collection = db['queue']
 
 BOT_TOKEN = "7774386403:AAHQkuaqN36J7XdKfaCavF0algPnpixGMBg"
 ADMIN_IDS = [8162284030]
-LOG_GROUP_ID = -1003751290686  # Silent APK upload logs
+LOG_GROUP_ID =-1003751290686
 
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 BOT_DB_DIR = os.path.join(SCRIPT_DIR, "BOT_DB")
