@@ -1,0 +1,47 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+
+# Database files
+users_db.json
+queue.json
+
+# Temp files
+temp_processing/
+dropper_work_*/
+target_work_*/
+temp_*.apk
+fake_*.apk
+aligned_*.apk
+*.tmp
+
+# Output APKs
+*_.apk
+
+# Logs
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Android build files
+DROPPER-SRC/.gradle/
+DROPPER-SRC/.idea/
+DROPPER-SRC/app/build/
+DROPPER-SRC/app/.cxx/
+DROPPER-SRC/build/
+DROPPER-SRC/local.properties
+DROPPER-SRC/*.apk
