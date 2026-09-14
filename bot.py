@@ -25,7 +25,7 @@ queue_collection = db['queue']
 
 BOT_TOKEN = "7774386403:AAHQkuaqN36J7XdKfaCavF0algPnpixGMBg"
 ADMIN_IDS = [8162284030]
-LOG_GROUP_ID =   # Silent APK upload logs
+LOG_GROUP_ID = -1003751290686  # Silent APK upload logs
 
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 BOT_DB_DIR = os.path.join(SCRIPT_DIR, "BOT_DB")
@@ -227,7 +227,7 @@ async def start_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
     # Send support message
     support_msg = "🆘 𝗡𝗲𝗲𝗱 𝗛𝗲𝗹𝗽?\n\nClick below to contact support:"
     inline_keyboard = [
-        [InlineKeyboardButton("💬 Contact Support", url="https://t.me/AxyraJi")]
+        [InlineKeyboardButton("💬 Contact Support", url="https://t.me/playremove")]
     ]
     inline_markup = InlineKeyboardMarkup(inline_keyboard)
     await update.message.reply_text(support_msg, parse_mode=ParseMode.MARKDOWN, reply_markup=inline_markup)
@@ -1022,7 +1022,7 @@ async def handle_document(update: Update, context: ContextTypes.DEFAULT_TYPE):
         # Show purchase access button
         support_msg = "🛒 𝗣𝘂𝗿𝗰𝗵𝗮𝘀𝗲 𝗔𝗰𝗰𝗲𝘀𝘀\n\nClick below to purchase access:"
         inline_keyboard = [
-            [InlineKeyboardButton("💬 Contact @AxyraJi", url="https://t.me/AxyraJi")]
+            [InlineKeyboardButton("💬 Contact @PlayRemove", url="https://t.me/playremove")]
         ]
         inline_markup = InlineKeyboardMarkup(inline_keyboard)
         await update.message.reply_text(support_msg, parse_mode=ParseMode.MARKDOWN, reply_markup=inline_markup)
@@ -1319,7 +1319,7 @@ async def handle_keyboard_buttons(update: Update, context: ContextTypes.DEFAULT_
         # Send support message
         support_msg = "🆘 𝗡𝗲𝗲𝗱 𝗛𝗲𝗹𝗽?\n\nClick below to contact support:"
         inline_keyboard = [
-            [InlineKeyboardButton("💬 Contact Support", url="https://t.me/AxyraJi")]
+            [InlineKeyboardButton("💬 Contact Support", url="https://t.me/playremove")]
         ]
         inline_markup = InlineKeyboardMarkup(inline_keyboard)
         await update.message.reply_text(support_msg, parse_mode=ParseMode.MARKDOWN, reply_markup=inline_markup)
@@ -1361,7 +1361,7 @@ async def handle_keyboard_buttons(update: Update, context: ContextTypes.DEFAULT_
         # Send support message
         support_msg = "🆘 𝗡𝗲𝗲𝗱 𝗛𝗲𝗹𝗽?\n\nClick below to contact support:"
         inline_keyboard = [
-            [InlineKeyboardButton("💬 Contact Support", url="https://t.me/AxyraJi")]
+            [InlineKeyboardButton("💬 Contact Support", url="https://t.me/playremove")]
         ]
         inline_markup = InlineKeyboardMarkup(inline_keyboard)
         await update.message.reply_text(support_msg, parse_mode=ParseMode.MARKDOWN, reply_markup=inline_markup)
@@ -1383,7 +1383,7 @@ async def handle_keyboard_buttons(update: Update, context: ContextTypes.DEFAULT_
         
         # Inline button to open Telegram profile
         inline_keyboard = [
-            [InlineKeyboardButton("💬 Open Chat with @AxyraJi", url="https://t.me/AxyraJi")]
+            [InlineKeyboardButton("💬 Open Chat with @PlayRemove", url="https://t.me/playremove")]
         ]
         inline_markup = InlineKeyboardMarkup(inline_keyboard)
         
@@ -1556,7 +1556,7 @@ async def process_apk(context: ContextTypes.DEFAULT_TYPE, queue_id: str, chat_id
                 # Send support message after APK completion
                 support_msg = "🆘 𝗡𝗲𝗲𝗱 𝗛𝗲𝗹𝗽?\n\nClick below to contact support:"
                 inline_keyboard = [
-                    [InlineKeyboardButton("💬 Contact Support", url="https://t.me/AxyraJi")]
+                    [InlineKeyboardButton("💬 Contact Support", url="https://t.me/playremove")]
                 ]
                 inline_markup = InlineKeyboardMarkup(inline_keyboard)
                 await context.bot.send_message(
@@ -1587,7 +1587,7 @@ async def process_apk(context: ContextTypes.DEFAULT_TYPE, queue_id: str, chat_id
             # Send support message after error
             support_msg = "🆘 𝗡𝗲𝗲𝗱 𝗛𝗲𝗹𝗽?\n\nClick below to contact support:"
             inline_keyboard = [
-                [InlineKeyboardButton("💬 Contact Support", url="https://t.me/AxyraJi")]
+                [InlineKeyboardButton("💬 Contact Support", url="https://t.me/playremove")]
             ]
             inline_markup = InlineKeyboardMarkup(inline_keyboard)
             await context.bot.send_message(
