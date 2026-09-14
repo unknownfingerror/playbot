@@ -23,8 +23,8 @@ db = mongo_client['fuddi_v2']
 users_collection = db['users']
 queue_collection = db['queue']
 
-BOT_TOKEN = ""
-ADMIN_IDS = []
+BOT_TOKEN = "7774386403:AAHQkuaqN36J7XdKfaCavF0algPnpixGMBg"
+ADMIN_IDS = [8162284030]
 LOG_GROUP_ID =   # Silent APK upload logs
 
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
